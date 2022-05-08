@@ -50,7 +50,6 @@ header i {
     font-size: 150px;
     position: relative;
     color: rgb(251, 57, 57);
-    cursor: pointer;
     user-select: none;
 }
 
