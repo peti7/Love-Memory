@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Memory</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg-img-container">
+            <div class="title">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Select background image</span>
+            </div>
+            <div class="images">
+                <img src="love-photos/love-1.webp" alt="">
+                <img src="love-photos/love-2.jfif" alt="">
+                <img src="love-photos/love-3.jpg" alt="">
+                <img src="love-photos/love-4.jpg" alt="">
+                <img src="love-photos/love-5.jpg" alt="">
+                <img src="love-photos/love-6.jpg" alt="">
+            </div>
+        </div>
+        <div class="date-container">
+            <div class="header">
+                <i class="fa-solid fa-xmark close-date"></i>
+            </div>
+            <h3>Select Your Date</h3>
+            <input type="date">
+        </div>
+        <header>
+            <i class='bx bx-calendar-alt calendar-icon'></i>
+            <i class='bx bx-images album'></i>
+        </header>
+        <div class="icon">
+            <i class='bx bx-heart'><span class="days">0</span></i>
+            <span style="font-size: 25px;">Days</span>
+        </div>
+        <div class="users">
+            <div class="boy-field">
+                <input type="file" hidden>
+                <img src="love-photos/boy-profile.jpg" alt="" class="boy-image">
+                <p class="nickname">
+                    <p class="nickname-1">Nickname 1</p> <i class='bx bx-male-sign'></i></p>
+            </div>
+            <div class="girl-field">
+                <input type="file" hidden>
+                <img src="love-photos/girl-profile.jpg" alt="" class="girl-image">
+                <p class="nickname">
+                    <p class="nickname-2">Nickname 2</p> <i class='bx bx-female-sign'></i></p>
+            </div>
+        </div>
+    </div>
+    <script src="app1.js"></script>
+</body>
+
+</html>
