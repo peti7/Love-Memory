@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(130deg, #654ea3, #eaafc8);
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    background: url(love-photos/love-2.jfif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    padding: 20px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px 10px;
+}
+
+header i {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrapper .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon i {
+    font-size: 150px;
+    position: relative;
+    color: rgb(251, 57, 57);
+    cursor: pointer;
+    user-select: none;
+}
+
+.icon span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+i .days {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 500;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.boy-image,
+.girl-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 30px 0;
+}
+
+.users p {
+    color: #fff;
+    font-weight: 500;
+}
+
+.users i {
+    color: #fff;
+    font-size: 17px;
+}
+
+.users .boy-field {
+    text-align: center;
+}
+
+.users .girl-field {
+    text-align: center;
+}
+
+.users .nickname-1,
+.nickname-2 {
+    cursor: pointer;
+}
+
+.bg-img-container {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.bg-img-container.show {
+    left: 0;
+}
+
+.bg-img-container .title {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.title i {
+    margin-right: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.title span {
+    font-size: 16px;
+    color: #654ea3;
+}
+
+.bg-img-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.bg-img-container .images {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    padding-left: 3px;
+}
+
+.bg-img-container .images img {
+    width: 150px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.date-container {
+    background-color: #fff;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 200;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.date-container.show {
+    top: 0;
+}
+
+.date-container .header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #ccc;
+}
+
+.header i {
+    color: #999;
+    font-size: 19px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.date-container h3 {
+    font-weight: 500;
+    font-size: 22px;
+    color: #654ea3;
+    margin-top: 20px;
+}
+
+.date-container input {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+    border: 2px solid #ccc;
+    color: #666;
+    margin: 20px auto;
+    outline: none;
+}
