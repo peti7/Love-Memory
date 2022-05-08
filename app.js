@@ -90,7 +90,9 @@ calendarIcon.addEventListener("click", () => {
 
 closeDateIcon.addEventListener("click", () => {
     dateContainer.classList.remove("show");
-    setInterval(setDate, 1000);
+    if(anniDate.value){
+         setInterval(setDate, 1000);
+    }
 });
 
 boyFile.addEventListener("change", function(e) {
