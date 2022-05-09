@@ -91,7 +91,7 @@ calendarIcon.addEventListener("click", () => {
 closeDateIcon.addEventListener("click", () => {
     dateContainer.classList.remove("show");
     if(anniDate.value){
-         setInterval(setDate, 1000);
+        setInterval(setDate, 1000);
     }
 });
 
@@ -143,6 +143,9 @@ function setDate(){
     localStorage.setItem("days", days.textContent);
     localStorage.setItem("inputValue", anniDate.value);
 }
+
+
+
 
 
 
