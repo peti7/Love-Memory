@@ -73,14 +73,14 @@ images.forEach(image => {
 
 nickname1.addEventListener("click", () => {
     nickname1.textContent = prompt("Enter name for nickname 1");
-    name1 = nickname1.textContent;
-    localStorage.setItem('name1', name1);
+    nickname1 = nickname1.textContent;
+    localStorage.setItem('name1', nickname1);
 });
 
 nickname2.addEventListener("click", () => {
     nickname2.textContent = prompt("Enter name for nickname 2");
-    name2 = nickname2.textContent;
-    localStorage.setItem('name2', name2);
+    nickname2 = nickname2.textContent;
+    localStorage.setItem('name2', nickname2);
 });
 
 
